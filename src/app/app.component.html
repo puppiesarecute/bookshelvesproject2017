@@ -1,5 +1,13 @@
-<h1>
+<!--<h1>
   {{title}}
 </h1>
 <button (click)="onSearch()">Search...</button>
-<app-my-first-component>Something...</app-my-first-component>
+<app-my-first-component>Something...</app-my-first-component>-->
+
+
+  <nav>
+    <a routerLink="/home" routerLinkActive="active">home</a>
+    <a routerLink="/about" routerLinkActive="active">about</a>
+    <a routerLink="/login" routerLinkActive="active">login</a>
+  </nav>
+  <router-outlet></router-outlet>
