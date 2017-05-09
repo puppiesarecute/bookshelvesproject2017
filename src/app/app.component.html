@@ -5,9 +5,15 @@
 <app-my-first-component>Something...</app-my-first-component>-->
 
 
-  <nav>
-    <a routerLink="/home" routerLinkActive="active">home</a>
-    <a routerLink="/about" routerLinkActive="active">about</a>
-    <a routerLink="/login" routerLinkActive="active">login</a>
-  </nav>
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" routerLink="/home" routerLinkActive="active">home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/about" routerLinkActive="active">about</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/login" routerLinkActive="active">login</a>
+    </li>
+  </ul>
   <router-outlet></router-outlet>

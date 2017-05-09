@@ -1,0 +1,9 @@
+.nav {
+    margin: 30px 40px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #367EA2;
+}
