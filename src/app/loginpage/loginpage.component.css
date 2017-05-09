@@ -1,0 +1,83 @@
+.container {
+    height: 400px;
+    position: relative;
+    padding: 20px;
+}
+.login-container {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+}
+
+.login-container::before,
+.login-container::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5.5px;
+    left: 0;
+    background: #fdf7ef;
+    z-index: -1;
+    -webkit-transform: rotateZ(4deg);
+    -moz-transform: rotateZ(4deg);
+    -ms-transform: rotateZ(4deg);
+    border: 1px solid #ccc;
+}
+
+.login-container::after{
+    top: 5px;
+    z-index: -2;
+    -webkit-transform: rotateZ(-2deg);
+    -moz-transform: rotateZ(-2deg);
+    -ms-transform: rotateZ(-2deg);
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border : 1px solid #aaa;
+    margin: 20px auto;
+    background: url('logo/logo.png') top center no-repeat;
+}
+
+form {
+    width:100%;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+}
+
+.form-box input{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    height:40px;
+    border: 1px solid #ccc;;
+    background: #eefcfd;
+}
+
+.form-box input:focus{
+    outline: 0;
+    background: #eee;
+}
+
+.form-box input[type="text"]{
+    border-radius: 5px 5px 0 0;
+    text-transform: lowercase;
+}
+
+.form-box input[type="password"]{
+    border-radius: 0 0 5px 5px;
+    border-top: 0;
+}
+
+.form-box button.login{
+    padding: 10px 20px;
+    margin: 20px auto;
+
+}
