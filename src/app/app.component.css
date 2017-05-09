@@ -7,3 +7,7 @@
 .nav-link {
     color: #367EA2;
 }
+
+a:hover {
+    color: #00507D;
+}
