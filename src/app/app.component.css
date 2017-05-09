@@ -11,3 +11,7 @@
 a:hover {
     color: #00507D;
 }
+
+.nav-link.active {
+    color: #691B4D;
+}
