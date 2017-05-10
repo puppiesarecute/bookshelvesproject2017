@@ -1,7 +1,68 @@
-<p> Thuc's Todo list:</p>
-<ul>
-  <li>Add background image</li>
-  <li>Move navigation links to the right</li>
-  <li>Create a simple login form</li>
-</ul>
-<p>Use bootstrap CSS: <a href="http://v4-alpha.getbootstrap.com/components/navs/">bootstrap</a></p>
+<div class="main">
+    <div class="leftContent col-lg-6">
+        <div class="bookImage col-md-4">
+            <div class="addImg">
+                <img src="src/app/homepage/img/book.jpg" alt="Image" class="addImg">
+            </div>
+            <div class="addImg">
+                <div class="addImg">
+                    <p class="addImg">If you want to add your own book image, click here!</p>
+                </div>
+                <div class="addImg">
+                    <button type="button" class="btn btn-primary addImg">Add image</button>
+                </div>
+            </div>
+        </div>
+        <form class="form-horizontal col-md-8">
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="title" placeholder="Title *">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="author" placeholder="Author *">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="date" class="form-control" id="pubDate" placeholder="Publication Date">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="author" placeholder="Publisher">
+                </div>
+            </div>
+             <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="edition" placeholder="Edition">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <textarea class="form-control" rows="3" placeholder="Anything else here..."></textarea>
+                </div>
+            </div>
+        </form>
+        <div class="suggestion">
+            <p>Suggestion book from Google API will be shown here after user enter Title or Author</p>
+        </div>
+    </div>
+    <div class="rightContent col-lg-6">
+        <div class="form-group">
+            <div class="col-sm-12">
+                <textarea class="form-control" rows="5" placeholder="What THEY say about this book..."></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <textarea class="form-control" rows="5" placeholder="What YOU say about this book..."></textarea>
+            </div>
+        </div>
+        <div class="addBook">
+            <button type="button" class="btn btn-primary addBook">Add book</button>
+        </div>
+    </div>
+</div>
+          
