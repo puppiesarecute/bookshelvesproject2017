@@ -1,3 +1,98 @@
-<p>
-  add-book works!
-</p>
+<div class="main col-lg-12">
+    <div class="container">
+        <img class="container" src="/src/app/homepage/img/AddBook2.png">
+    </div>
+    <div class="leftContent col-lg-6">
+        <div class="bookImg">
+            <div class="addImg">
+                <img class='addImg' src="src/app/homepage/img/book.jpg" alt="Image" class="addImg">
+            </div>
+            <div class="addImg">
+                <div class="addImg">
+                    <p class="addImg">If you want to add your own book image, click here!</p>
+                </div>
+                <div class="addImg">
+                    <button type="button" class="btn btn-primary addImg">Add image</button>
+                </div>
+            </div>
+        </div>
+        <form class="form-horizontal col-md-8">
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="title" placeholder="Title *">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="author" placeholder="Author *">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="date" class="form-control" id="pubDate" placeholder="Publication Date">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="author" placeholder="Publisher">
+                </div>
+            </div>
+             <div class="form-group">
+                <div class="col-sm-12">
+                    <input type="text" class="form-control" id="edition" placeholder="Edition">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <textarea class="form-control" rows="3" placeholder="Anything else here..."></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-12 selectContainer">
+                    <select class="form-control" name="category">
+                        <option value="" id="default">Choose a category</option>
+                        <option value="0">Arts & Entertainment</option>
+                        <option value="1">Business</option>
+                        <option value="2">Drama & Poetry</option>
+                        <option value="3">History</option>
+                        <option value="4">...</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <div class="suggestion">
+            <p>Suggestion book from Google API will be shown here after user enter Title or Author</p>
+        </div>
+    </div>
+    <div class="rightContent col-lg-6">
+        <div class="form-group">
+            <div class="col-sm-12">
+                <textarea class="form-control" rows="5" placeholder="What THEY say about this book..."></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <textarea class="form-control" rows="5" placeholder="What YOU say about this book..."></textarea>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-12">
+                <textarea class="form-control" rows="2" id="tag" placeholder="Add tag here"></textarea>
+            </div>
+        </div>
+        <div class="rightButton">
+            <div class="addBook">
+                <button type="button" class="btn btn-primary addBook">Add book</button>
+            </div>
+            <div class="favorite">
+                <button type="button" class="btn btn-primary favorite">Farvorites</button>
+            </div>
+            <div class="addQuotes">
+                <button type="button" class="btn btn-primary addQuotes">Add Quotes</button>
+            </div>
+        </div>
+        <div class="showQuotes">
+            <p>After clicking add quotes, it will show textarea here</p>
+        </div>
+    </div>
+</div>

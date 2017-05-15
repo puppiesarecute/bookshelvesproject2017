@@ -1,22 +1,19 @@
-<div class="main col-lg-12">
-    <div class="container">
-        <img class="container" src="/src/app/homepage/img/AddBook2.png">
-    </div>
-    <div class="leftContent col-lg-6">
-        <div class="bookImage col-md-4">
-            <div class="addImg">
+<div class="container">
+    <div class="addImg col-lg-3">
+        <div class="addImg leftImg">
                 <img class='addImg' src="src/app/homepage/img/book.jpg" alt="Image" class="addImg">
+        </div>
+        <div class="addImg rightImg">
+            <div class="addImg">
+                <p class="addImg">If you want to add your own book image, click here!</p>
             </div>
             <div class="addImg">
-                <div class="addImg">
-                    <p class="addImg">If you want to add your own book image, click here!</p>
-                </div>
-                <div class="addImg">
-                    <button type="button" class="btn btn-primary addImg">Add image</button>
-                </div>
+                <button type="button" class="btn btn-primary addImg">Add image</button>
             </div>
         </div>
-        <form class="form-horizontal col-md-8">
+    </div>
+    <div class="bookInfo col-lg-6">
+        <form class="form-horizontal">
             <div class="form-group">
                 <div class="col-sm-12">
                     <input type="text" class="form-control" id="title" placeholder="Title *">
@@ -60,11 +57,6 @@
                 </div>
             </div>
         </form>
-        <div class="suggestion">
-            <p>Suggestion book from Google API will be shown here after user enter Title or Author</p>
-        </div>
-    </div>
-    <div class="rightContent col-lg-6">
         <div class="form-group">
             <div class="col-sm-12">
                 <textarea class="form-control" rows="5" placeholder="What THEY say about this book..."></textarea>
@@ -80,33 +72,16 @@
                 <textarea class="form-control" rows="2" id="tag" placeholder="Add tag here"></textarea>
             </div>
         </div>
-        <div class="rightButton">
-            <div class="addBook">
-                <button type="button" class="btn btn-primary addBook">Add book</button>
-            </div>
-            <div class="favorite">
-                <button type="button" class="btn btn-primary favorite">Farvorites</button>
-            </div>
-            <div class="addQuotes">
-                <button type="button" class="btn btn-primary addQuotes">Add Quotes</button>
-            </div>
+    </div>
+    <div class="mainButtons col-lg-3">
+        <div class="addBook">
+            <button type="button" class="btn btn-primary addBook">Add book</button>
         </div>
-        <div class="showQuotes">
-            <p>After clicking add quotes, it will show textarea here</p>
+        <div class="favorite">
+            <button type="button" class="btn btn-primary favorite">Farvorites</button>
+        </div>
+        <div class="addQuotes">
+            <button type="button" class="btn btn-primary addQuotes">Add Quotes</button>
         </div>
     </div>
 </div>
-
-<script type="text/javascript">
-(function() {
-
-var img = document.getElementById('container').firstChild;
-img.onload = function() {
-    if(img.height > img.width) {
-        img.height = '100%';
-        img.width = 'auto';
-    }
-};
-
-}());
-</script>
