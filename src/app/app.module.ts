@@ -11,6 +11,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AboutpageComponent } from './aboutpage/aboutpage.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { AddBookComponent } from './add-book/add-book.component';
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomepageComponent },
@@ -33,7 +35,9 @@ const appRoutes: Routes = [
     HomepageComponent,
     AboutpageComponent,
     LoginpageComponent,
-    PagenotfoundComponent
+    PagenotfoundComponent,
+    AddBookComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

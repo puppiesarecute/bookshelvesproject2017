@@ -1,30 +1,37 @@
 .main{
-    width: 80%;
+    width: 90%;
+    box-sizing: border-box;
+    position: relative;
     margin: auto;
-    padding: 0;
-    height: 100%;
 }
+
+.container {
+    z-index: initial;
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
 .leftContent {
-    background: rgba(245,220,181,.4);
-    margin: auto;
-    padding: 70px;
-    border-radius: 10%;
     float:left;
     width: 45%;
     height: 80%;
+    z-index: 1;
     position: absolute;
-    left: 100px;
+    padding-top: 7%;
+    padding-left: 7.5%;
+    padding-right: 0.5%; 
 }
 
 .rightContent {
-    background: rgba(245,220,181,.4);
-    padding: 50px;
-    border-radius: 10%;
-    float:right;
-    width: 45%;
+    float:left;
+    width: 38.5%;
     height: 80%;
+    z-index: 1;
     position: absolute;
-    right: 100px;
+    margin-left: 53.5%;
+    padding-top: 7%;
+    padding-left: 1.5%
 }
 
 .form-group {
@@ -39,7 +46,7 @@
     float: right;
 }
 
-img {
+img.addImg {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 20px;
@@ -57,26 +64,64 @@ p {
     text-align: center;
 }
 
-.addBook {
-    padding: 10px;
-    float: right;
-}
-
 button {
     background-color: #367EA2;
     font-size: 1em;
     font-weight: bold;
+    margin: 10px;
+    border: none;
 }
 
-input::placeholder,
-textarea::placeholder {
+.rightButton {
+    padding: 10px;
+    float: left;
+    position: absolute;
+}
+
+
+button.favorite {
+    background-color: #BE3C3A;
+}
+
+.form-control {
+    border: 2.4px ridge #E1C296;
+    background-color: #E9EADC;
+}
+
+.form-control::placeholder {
   color: #367EA2;
   opacity: 0.7;
 }
 
 .suggestion {
     float: left;
-    margin: 60px 60px;
+    margin: 10px 60px;
     border-style: dashed;
-    padding: 40px;
+    padding: 10px;
+}
+
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.25rem + 3px);
+    color: #367EA2;
+    opacity: 0.7
+}
+
+input[type=date], input[type=time], input[type=datetime-local], input[type=month] {
+    color: #367EA2;
+    opacity: 0.7
+}
+
+.showQuotes {
+    border-style: dashed;
+    padding: 10px;
+    margin: 40px 40px;
+    float: right;
+    width: 50%;
+    margin-left: 30%;
+}
+
+@media only screen and (max-width: 1500px) {
+    body {
+        background-color: lightblue;
+    }
 }
