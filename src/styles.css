@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background: url('img/bg.jpg') no-repeat top center;
-    background-color:#F6EEE1;
+    /*background: url('img/bg.jpg') no-repeat top center;*/
+    background: #fffff0;
+    /*background-color:#F6EEE1;*/
 }

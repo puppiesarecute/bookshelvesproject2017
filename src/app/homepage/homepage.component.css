@@ -3,8 +3,8 @@
 }
 
 .container {
-    background:lightblue;
-    width: 90%;
+    background:#bae1ff;
+    width: 85%;
     overflow: hidden;
     padding-top: 3%;
     padding-bottom: 3%;
@@ -18,10 +18,27 @@
     padding: 5px;
 }
 
+.content {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-align-content: center;
+    align-content: center;
+}
+
+.showImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 p.addImg {
     font-style: italic;
     font-size: 0.95em;
-    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px; 
+    display: inline-block;  
 }
 
 img.addImg {
@@ -29,13 +46,16 @@ img.addImg {
     border: 1px solid;
     border-radius: 4px;
     padding: 10px;
-    margin-left: 30%;
 }
 
-button.addImg{
-    margin-left: 50%;
+button.addImg {
     border: none;
     padding: 10px;
+    margin: 0 25% auto;
+}
+
+.seLine {
+    text-align: center;
 }
 
 .bookInfo {
@@ -54,8 +74,16 @@ button {
     font-weight: bold;
 }
 
+button:hover {
+    background-color: #82d5fc;
+}
+
 button.favorite {
     background-color: #BE3C3A;
+}
+
+button.favorite:hover {
+    background-color:  	#ffb1b1;
 }
 
 @media only screen and (max-width: 990px) {
